@@ -10,7 +10,7 @@ console.log(route.query.categoryId)
 
 const eventLists = ref();
 const getLink = async () => {
-  const res = await fetch(`http://localhost:8080/api/events/category/${route.query.categoryId}`);
+  const res = await fetch(`http://ip21kw3.sit.kmutt.ac.th:8080/api/events/category/${route.query.categoryId}`);
   if (res.status === 200) {
     eventLists.value = await res.json();
     
